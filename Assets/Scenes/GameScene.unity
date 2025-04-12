@@ -454,6 +454,10 @@ PrefabInstance:
       propertyPath: isCollapsible
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6065498394538212895, guid: 2258c649327bd9543847e61dd5de1254, type: 3}
+      propertyPath: isDisappearing
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -634,9 +638,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c431a79f999ca74b82aa9308fbae498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 6
-  speed: 4
-  accelerationRate: 6
+  jumpHeight: 10
+  speed: 6
+  accelerationRate: 10
+  gravityBase: 1
+  gravityScale: 2
   onUmbrella: 0
   jumpModifier: 1
 --- !u!1001 &5258498399386313335

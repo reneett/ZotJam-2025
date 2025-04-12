@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float jumpHeight;
     [SerializeField] private float speed;
     [SerializeField] public float accelerationRate;
+    [SerializeField] public float gravityBase;
+    [SerializeField] public float gravityScale;
 
     private Rigidbody2D body;
     public bool onUmbrella;
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Vector2 velocity = body.linearVelocity;
+        gravityBase = 1;
 
         bool isMovingLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
         bool isMovingRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
@@ -35,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
         if (isMovingRight)
         {
             velocity.x = Mathf.MoveTowards(body.linearVelocity.x, speed, accelerationRate * Time.deltaTime);
+        }
+        if(velocity.y < 0) {
+            gravityBase = gravityBase * gravityScale;
+            body.gravityScale = gravityBase;
         }
 
         if (onUmbrella) {
