@@ -53,10 +53,17 @@ public class PlayerMovement : MonoBehaviour
                 respawn();
             }
         }
+        if (collision.gameObject.tag == "Floor") {
+            respawn();
+        }
     }
 
     private void respawn() {
-        transform.position = startPosition;
+        onUmbrella = false;
+        body.linearVelocity = Vector2.zero;
+        body.angularVelocity = 0;
+        body.MovePosition(startPosition);
+        body.rotation = 0;
         jumpModifier = 5;
     }
 
