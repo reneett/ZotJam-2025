@@ -8,15 +8,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float accelerationRate;
 
     private Rigidbody2D body;
-    private bool onUmbrella = false;
+    public bool onUmbrella;
     private Vector2 startPosition;
-    public int jumpModifier = 5;
+    public float jumpModifier = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         startPosition = transform.position;
+        onUmbrella = false;
     }
 
     // Update is called once per frame
@@ -48,10 +49,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Umbrella") {
             onUmbrella = true;
-            jumpModifier -= collision.gameObject.GetComponent<Umbrella>().modifier;
-            if (jumpModifier <= 0) {
-                respawn();
-            }
+            jumpModifier = collision.gameObject.GetComponent<Umbrella>().modifier;
+            collision.gameObject.GetComponent<Umbrella>().jumpedOn = true;
         }
         if (collision.gameObject.tag == "Floor") {
             respawn();
@@ -63,8 +62,7 @@ public class PlayerMovement : MonoBehaviour
         body.linearVelocity = Vector2.zero;
         body.angularVelocity = 0;
         body.MovePosition(startPosition);
-        body.rotation = 0;
-        jumpModifier = 5;
+        jumpModifier = 1;
     }
 
 }
