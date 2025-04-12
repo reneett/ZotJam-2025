@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] public float jumpHeight;
     [SerializeField] private float speed;
+    [SerializeField] public float accelerationRate;
 
     private Rigidbody2D body;
     private bool onUmbrella = false;
@@ -21,15 +22,27 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        body.linearVelocity = new Vector2(Input.GetAxis("Horizontal")*speed, body.linearVelocity.y);
-        if (onUmbrella) {
-            bounce();
-        }
-    }
+        Vector2 velocity = body.linearVelocity;
 
-    private void bounce() {
-        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpHeight*jumpModifier);
-        onUmbrella = false;
+        bool isMovingLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
+        bool isMovingRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
+        
+        if (isMovingLeft)
+        {
+            velocity.x = Mathf.MoveTowards(body.linearVelocity.x, -speed, accelerationRate * Time.deltaTime);
+        }
+        if (isMovingRight)
+        {
+            velocity.x = Mathf.MoveTowards(body.linearVelocity.x, speed, accelerationRate * Time.deltaTime);
+        }
+
+        if (onUmbrella) {
+            velocity.y = jumpHeight*jumpModifier;
+            onUmbrella = false;
+        }
+
+        body.linearVelocity = velocity;
+       
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
