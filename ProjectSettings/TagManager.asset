@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Umbrella
+  - Floor
   layers:
   - Default
   - TransparentFX
