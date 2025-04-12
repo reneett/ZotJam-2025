@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     
     [SerializeField] public float jumpHeight;
+    [SerializeField] public float jumpModifier;
     [SerializeField] private float speed;
 
     private Rigidbody2D body;
@@ -25,13 +26,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void bounce() {
-        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpHeight);
+        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpHeight*jumpModifier);
         onUmbrella = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Umbrella") {
             onUmbrella = true;
+            jumpModifier -= collision.gameObject.GetComponent<Umbrella>().modifier;
         }
     }
 
