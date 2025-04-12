@@ -3,8 +3,8 @@ using UnityEngine;
 public class Umbrella : MonoBehaviour
 {
 
-    [SerializeField] public float modifier;
-    
+    [SerializeField] public int modifier;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
