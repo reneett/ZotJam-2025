@@ -15,8 +15,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Character
+  - Background
   - 
   - 
   - 
@@ -62,6 +62,15 @@ TagManager:
     locked: 0
   - name: Cloud
     uniqueID: 121778459
+    locked: 0
+  - name: Umbrella
+    uniqueID: 2804723225
+    locked: 0
+  - name: Character
+    uniqueID: 1802864199
+    locked: 0
+  - name: Umbrella Head
+    uniqueID: 2666727455
     locked: 0
   m_RenderingLayers:
   - Default
