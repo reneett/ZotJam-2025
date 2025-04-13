@@ -785,8 +785,7 @@ PrefabInstance:
       propertyPath: isCollapsible
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2825966280387826408, guid: 2258c649327bd9543847e61dd5de1254, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

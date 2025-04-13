@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5986218672825774117}
   - component: {fileID: 4375924988334008611}
   - component: {fileID: 6065498394538212895}
-  - component: {fileID: 2825966280387826408}
   - component: {fileID: 245386290283517415}
   m_Layer: 0
   m_Name: Umbrella
@@ -108,43 +107,9 @@ MonoBehaviour:
   isCollapsible: 0
   isDisappearing: 0
   jumpedOn: 0
---- !u!70 &2825966280387826408
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32432263697183321}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.0011984624, y: 0.0000061848623}
-  m_Size: {x: 1.0072162, y: 1.0391679}
-  m_Direction: 1
+  spriteRenderer: {fileID: 0}
+  openUmbrella: {fileID: 0}
+  closedUmbrella: {fileID: 0}
 --- !u!50 &245386290283517415
 Rigidbody2D:
   serializedVersion: 5
