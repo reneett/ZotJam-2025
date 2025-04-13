@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,26 +47,38 @@ public class Umbrella : MonoBehaviour
             changeUmbrella(umbrellaOpen);
         }
     }
-
-    private void changeUmbrella(bool open) {
-        //closes or opens the umbrella, false: close umbrella, true: open umbrella
-        if (open) {
+    private void changeUmbrella(bool open)
+    {
+        if (open)
+        {
             umbrellaBody.simulated = true;
             spriteRenderer.enabled = true;
             Debug.Log("moving umbrella");
             umbrellaBody.MovePosition(startingPosition);
             spriteRenderer.sprite = openUmbrella;
-        } else {
-            if (closedUmbrella != null) {
+            jumpedOn = false;
+        }
+        else
+        {
+            if (closedUmbrella != null)
+            {
                 spriteRenderer.sprite = closedUmbrella;
                 umbrellaBody.simulated = false;
-            } else {
+            }
+            else
+            {
                 Vector2 position = startingPosition;
                 position.y -= 20;
                 umbrellaBody.MovePosition(position);
             }
+
+            if (isDisappearing)
+            {
+                spriteRenderer.enabled = false;
+            }
         }
     }
+
 
     public void resetUmbrella() {
         Debug.Log("resetting umbreller");
