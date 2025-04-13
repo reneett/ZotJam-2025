@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -30,17 +31,6 @@ public class PlayerMovement : MonoBehaviour
         Vector2 velocity = body.linearVelocity;
         gravityBase = 1;
 
-        /*bool isMovingLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
-        bool isMovingRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
-        
-        if (isMovingLeft)
-        {
-            velocity.x = Mathf.MoveTowards(body.linearVelocity.x, -speed, accelerationRate * Time.deltaTime);
-        }
-        if (isMovingRight)
-        {
-            velocity.x = Mathf.MoveTowards(body.linearVelocity.x, speed, accelerationRate * Time.deltaTime);
-        } */
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
             spriteRenderer.flipX = true;
         } else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
@@ -69,6 +59,10 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.GetComponent<Umbrella>().jumpedOn = true;
         }
         if (collision.gameObject.tag == "Floor") {
+            respawn();
+        }
+        if (collision.gameObject.tag == "Goal") {
+            Debug.Log("yaaaay you did it");
             respawn();
         }
     }
