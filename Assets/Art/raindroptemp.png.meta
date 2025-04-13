@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raindroptemp_0: 2708621840461811438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
