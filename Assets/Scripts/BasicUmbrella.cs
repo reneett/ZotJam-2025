@@ -21,20 +21,24 @@ public class Umbrella : MonoBehaviour
     [SerializeField] public PlayerMovement player;
 
     [Tooltip("How fast the moving umbrella will move side to side.")]
-    [SerializeField] private float movementSpeed;
+    public float movementSpeed;
     [Tooltip("Set true for collapsing/reopening umbrella.")]
-    [SerializeField] private bool isCollapsible;
+    public bool isCollapsible;
     [Tooltip("Set true for disappearing umbrella.")]
-    [SerializeField] private bool isDisappearing;
+    public bool isDisappearing;
 
     public bool jumpedOn = false;
     private Rigidbody2D umbrellaBody;
+    private SpriteRenderer spriteRenderer;
+    public Sprite openUmbrella;
+    public Sprite closedUmbrella;
     private bool umbrellaOpen = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         umbrellaBody = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -56,10 +60,15 @@ public class Umbrella : MonoBehaviour
         //closes or opens the umbrella, false: close umbrella, true: open umbrella
         if (open) {
             umbrellaBody.simulated = true;
-            transform.GetComponent<Renderer>().enabled = true;
+            spriteRenderer.enabled = true;
+            spriteRenderer.sprite = openUmbrella;
         } else {
             umbrellaBody.simulated = false;
-            transform.GetComponent<Renderer>().enabled = false;
+            if (closedUmbrella == null) {
+                spriteRenderer.enabled = false;
+            } else {
+                spriteRenderer.sprite = closedUmbrella;
+            }
         }
     }
 
