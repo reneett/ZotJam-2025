@@ -54,14 +54,11 @@ TagManager:
   - name: Road
     uniqueID: 254505999
     locked: 0
-  - name: Player
-    uniqueID: 1033754339
-    locked: 0
   - name: Effects
     uniqueID: 3209966649
     locked: 0
-  - name: Foreground
-    uniqueID: 1456456377
+  - name: Player
+    uniqueID: 1033754339
     locked: 0
   - name: Cloud
     uniqueID: 121778459
@@ -74,6 +71,9 @@ TagManager:
     locked: 0
   - name: Umbrella Head
     uniqueID: 2666727455
+    locked: 0
+  - name: Foreground
+    uniqueID: 1456456377
     locked: 0
   m_RenderingLayers:
   - Default

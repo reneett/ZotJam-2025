@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 startPosition;
     public float jumpModifier = 1;
     private bool facingRight = true;
+    public bool levelClear = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,28 +32,31 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 velocity = body.linearVelocity;
-        gravityBase = 1;
+        if (!levelClear) {
+            //only move if the level has not been cleared
+            Vector2 velocity = body.linearVelocity;
+            gravityBase = 1;
 
-        if ((Input.GetKey(KeyCode.A) && facingRight) || (Input.GetKey(KeyCode.D) && !facingRight)) {
-            facingRight = !facingRight;
-            transform.localScale = new Vector3(transform.localScale.x *-1, transform.localScale.y, transform.localScale.z);
-        } 
+            if ((Input.GetKey(KeyCode.A) && facingRight) || (Input.GetKey(KeyCode.D) && !facingRight)) {
+                facingRight = !facingRight;
+                transform.localScale = new Vector3(transform.localScale.x *-1, transform.localScale.y, transform.localScale.z);
+            } 
 
-        velocity.x = Input.GetAxis("Horizontal")*speed*accelerationRate;
-        if(velocity.y < 0) {
-            gravityBase = gravityBase * gravityScale;
-            body.gravityScale = gravityBase;
-            animator.Play("raindropfloat");
-        } 
+            velocity.x = Input.GetAxis("Horizontal")*speed*accelerationRate;
+            if(velocity.y < 0) {
+                gravityBase = gravityBase * gravityScale;
+                body.gravityScale = gravityBase;
+                animator.Play("raindropfloat");
+            } 
 
-        if (onUmbrella) {
-            velocity.y = jumpHeight*jumpModifier;
-            onUmbrella = false;
-            animator.Play("raindropjump");
+            if (onUmbrella) {
+                velocity.y = jumpHeight*jumpModifier;
+                onUmbrella = false;
+                animator.Play("raindropjump");
+            }
+
+            body.linearVelocity = velocity;
         }
-
-        body.linearVelocity = velocity;
        
     }
 
@@ -67,21 +71,21 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.tag == "Goal") {
             Debug.Log("yaaaay you did it");
-            StartCoroutine(Win());
+            levelClear = true;
         }
     }
 
-    private void respawn() {
+    public void respawn() {
         onUmbrella = false;
         body.linearVelocity = Vector2.zero;
         body.angularVelocity = 0;
-        body.MovePosition(startPosition);
+        facingRight = true;
         jumpModifier = 1;
+        body.MovePosition(startPosition);
     }
 
-    IEnumerator Win() {
-        yield return new WaitForSeconds(2f);
-        respawn();
+    public void resetLevel() {
+        levelClear = false;
     }
 
 }
