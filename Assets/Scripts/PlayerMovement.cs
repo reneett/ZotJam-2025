@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float gravityScale;
 
     private Rigidbody2D body;
-    private SpriteRenderer spriteRenderer;
+    //private SpriteRenderer spriteRenderer;
+    private Animator animator;
     public bool onUmbrella;
     private Vector2 startPosition;
     public float jumpModifier = 1;
@@ -20,7 +21,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         startPosition = transform.position;
         onUmbrella = false;
     }
@@ -32,20 +34,22 @@ public class PlayerMovement : MonoBehaviour
         gravityBase = 1;
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
         } else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
         }
 
         velocity.x = Input.GetAxis("Horizontal")*speed*accelerationRate;
         if(velocity.y < 0) {
             gravityBase = gravityBase * gravityScale;
             body.gravityScale = gravityBase;
+            animator.Play("raindropfall");
         }
 
         if (onUmbrella) {
             velocity.y = jumpHeight*jumpModifier;
             onUmbrella = false;
+            animator.Play("raindropjump");
         }
 
         body.linearVelocity = velocity;
