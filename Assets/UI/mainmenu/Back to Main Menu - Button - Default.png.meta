@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6a9fef12f43f98441b537676fa6254a2
+guid: c6729d2abb46fe448a00393e62be0a00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7689346177116055528
-    second: crow flip_0
+      213: -7669611571552841225
+    second: Back to Main Menu - Button - Default_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: crow flip_0
+      name: Back to Main Menu - Button - Default_0
       rect:
         serializedVersion: 2
-        x: 585
-        y: 330
-        width: 195
-        height: 177
+        x: 0
+        y: 0
+        width: 924
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8185dfd4464f94590800000000000000
-      internalID: -7689346177116055528
+      spriteID: 7f11e5839e0109590800000000000000
+      internalID: -7669611571552841225
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      crow flip_0: -7689346177116055528
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
