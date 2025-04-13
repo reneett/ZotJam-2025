@@ -60,7 +60,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayerID
@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayerID
@@ -220,7 +220,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2444851487478503381, guid: 806a28ac40932a740af9cc588f356020, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.05996
+      value: 28.14
       objectReference: {fileID: 0}
     - target: {fileID: 2444851487478503381, guid: 806a28ac40932a740af9cc588f356020, type: 3}
       propertyPath: m_LocalPosition.y
@@ -258,6 +258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4027511076018615101, guid: 806a28ac40932a740af9cc588f356020, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.39
+      objectReference: {fileID: 0}
     - target: {fileID: 7803440289111498525, guid: 806a28ac40932a740af9cc588f356020, type: 3}
       propertyPath: m_Name
       value: cats in trench
@@ -286,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 29b139edaf3f96f4fa8c5f08f6f84b8e, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 29b139edaf3f96f4fa8c5f08f6f84b8e, type: 3}
       propertyPath: m_SortingLayerID
@@ -434,7 +438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayerID
@@ -510,6 +514,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8547742083554187385}
     m_Modifications:
+    - target: {fileID: 1237260775947544819, guid: af611a6bf9f010e47a67256043835cbd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7440407203742647280, guid: af611a6bf9f010e47a67256043835cbd, type: 3}
       propertyPath: m_Name
       value: cat
@@ -584,6 +592,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8547742083554187385}
     m_Modifications:
+    - target: {fileID: 522486908969638664, guid: a58ff9e169025964db7e3371c9e85b01, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8000168846294491805, guid: a58ff9e169025964db7e3371c9e85b01, type: 3}
       propertyPath: m_Name
       value: bunny
@@ -662,6 +674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog
       objectReference: {fileID: 0}
+    - target: {fileID: 1872176813207030740, guid: 838c76ce4d5b2224dadc7b5734831dd6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 2293949900504356081, guid: 838c76ce4d5b2224dadc7b5734831dd6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.913885
@@ -726,7 +742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 29b139edaf3f96f4fa8c5f08f6f84b8e, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 29b139edaf3f96f4fa8c5f08f6f84b8e, type: 3}
       propertyPath: m_SortingLayerID
@@ -812,7 +828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayerID
@@ -888,6 +904,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8547742083554187385}
     m_Modifications:
+    - target: {fileID: 1237260775947544819, guid: af611a6bf9f010e47a67256043835cbd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7440407203742647280, guid: af611a6bf9f010e47a67256043835cbd, type: 3}
       propertyPath: m_Name
       value: cat (1)
@@ -964,7 +984,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2444851487478503381, guid: 806a28ac40932a740af9cc588f356020, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.379961
+      value: 15.01
       objectReference: {fileID: 0}
     - target: {fileID: 2444851487478503381, guid: 806a28ac40932a740af9cc588f356020, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1002,6 +1022,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4027511076018615101, guid: 806a28ac40932a740af9cc588f356020, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.39
+      objectReference: {fileID: 0}
     - target: {fileID: 7803440289111498525, guid: 806a28ac40932a740af9cc588f356020, type: 3}
       propertyPath: m_Name
       value: cats in trench
@@ -1024,6 +1048,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8547742083554187385}
     m_Modifications:
+    - target: {fileID: 522486908969638664, guid: a58ff9e169025964db7e3371c9e85b01, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8000168846294491805, guid: a58ff9e169025964db7e3371c9e85b01, type: 3}
       propertyPath: m_Name
       value: bunny (1)
@@ -1104,7 +1132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4375924988334008611, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
       propertyPath: m_SortingLayerID
