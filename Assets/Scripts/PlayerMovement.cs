@@ -79,7 +79,10 @@ public class PlayerMovement : MonoBehaviour
         onUmbrella = false;
         body.linearVelocity = Vector2.zero;
         body.angularVelocity = 0;
-        facingRight = true;
+        if (!facingRight) {
+            facingRight = !facingRight;
+            transform.localScale = new Vector3(transform.localScale.x *-1, transform.localScale.y, transform.localScale.z);
+        }
         jumpModifier = 1;
         body.MovePosition(startPosition);
     }
