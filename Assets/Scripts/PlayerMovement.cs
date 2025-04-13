@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.tag == "Goal") {
             Debug.Log("yaaaay you did it");
-            respawn();
+            StartCoroutine(Win());
         }
     }
 
@@ -77,6 +77,11 @@ public class PlayerMovement : MonoBehaviour
         body.angularVelocity = 0;
         body.MovePosition(startPosition);
         jumpModifier = 1;
+    }
+
+    IEnumerator Win() {
+        yield return new WaitForSeconds(2f);
+        respawn();
     }
 
 }
