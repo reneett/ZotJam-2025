@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public bool onUmbrella;
     private Vector2 startPosition;
     public float jumpModifier = 1;
+    private bool facingRight = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,18 +34,17 @@ public class PlayerMovement : MonoBehaviour
         Vector2 velocity = body.linearVelocity;
         gravityBase = 1;
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
-            //spriteRenderer.flipX = true;
-        } else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
-            //spriteRenderer.flipX = false;
-        }
+        if ((Input.GetKey(KeyCode.A) && facingRight) || (Input.GetKey(KeyCode.D) && !facingRight)) {
+            facingRight = !facingRight;
+            transform.localScale = new Vector3(transform.localScale.x *-1, transform.localScale.y, transform.localScale.z);
+        } 
 
         velocity.x = Input.GetAxis("Horizontal")*speed*accelerationRate;
         if(velocity.y < 0) {
             gravityBase = gravityBase * gravityScale;
             body.gravityScale = gravityBase;
-            animator.Play("raindropfall");
-        }
+            animator.Play("raindropfloat");
+        } 
 
         if (onUmbrella) {
             velocity.y = jumpHeight*jumpModifier;
