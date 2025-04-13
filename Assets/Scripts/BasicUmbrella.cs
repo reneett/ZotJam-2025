@@ -10,6 +10,7 @@ public class Umbrella : MonoBehaviour
 
     [Tooltip("Set true for collapsing/reopening umbrella.")]
     public bool isCollapsible;
+    public bool startsClosed;
     [Tooltip("Set true for disappearing umbrella.")]
     public bool isDisappearing;
 
@@ -25,6 +26,10 @@ public class Umbrella : MonoBehaviour
     {
         umbrellaBody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (startsClosed) {
+            changeUmbrella(false);
+            umbrellaOpen = false;
+        }
     }
 
     // Update is called once per frame
