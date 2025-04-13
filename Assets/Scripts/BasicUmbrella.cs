@@ -1,27 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Umbrella : MonoBehaviour
 {
-    /*
-    >>only need different modifiers
-    bouncy umbrella : double jump height
-    old umbrella : half jump height
-
-    >>need access to bool to determine availability
-    collapsing : collapses/reopens on each jump
-
-    >>on collision, destroy
-    disappearing : bounce once, then disabled
-
-    >>transform
-    moving : umbrella moves side to side
-    */
 
     [SerializeField] public float modifier;
     [SerializeField] public PlayerMovement player;
 
-    [Tooltip("How fast the moving umbrella will move side to side.")]
-    public float movementSpeed;
     [Tooltip("Set true for collapsing/reopening umbrella.")]
     public bool isCollapsible;
     [Tooltip("Set true for disappearing umbrella.")]
@@ -50,9 +36,6 @@ public class Umbrella : MonoBehaviour
         if (isCollapsible && player.onUmbrella) {
             umbrellaOpen = !umbrellaOpen;
             changeUmbrella(umbrellaOpen);
-        }
-        if (movementSpeed > 0) {
-            //nothing rn
         }
     }
 

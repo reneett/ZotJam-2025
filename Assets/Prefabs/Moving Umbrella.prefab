@@ -104,12 +104,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modifier: 1
   player: {fileID: 0}
-  movementSpeed: 0
+  movementSpeed: 1
   isCollapsible: 0
   isDisappearing: 0
   jumpedOn: 0
   openUmbrella: {fileID: -9106275301997704921, guid: 4fa2046486a00614990cecc3d24b748e, type: 3}
   closedUmbrella: {fileID: 0}
+  umbrella: {fileID: 0}
+  startPosition: {fileID: 0}
+  endPosition: {fileID: 0}
 --- !u!50 &245386290283517415
 Rigidbody2D:
   serializedVersion: 5
@@ -178,7 +181,7 @@ EdgeCollider2D:
   - {x: -1.5612378, y: 0.48274693}
   - {x: -0.09599829, y: 0.85572106}
   - {x: 1.4973805, y: 0.54182875}
-  - {x: 2.8951414, y: -0.23168415}
+  - {x: 2.9545457, y: -0.18416053}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
