@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
             jumpModifier = collision.gameObject.GetComponent<Umbrella>().modifier;
             collision.gameObject.GetComponent<Umbrella>().jumpedOn = true;
         }
-        if (collision.gameObject.tag == "Floor") {
+        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Crow") {
             respawn();
         }
         if (collision.gameObject.tag == "Goal") {
