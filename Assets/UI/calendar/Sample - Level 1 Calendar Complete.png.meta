@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 16b40e4a896824c44b4c0972420f33c4
+guid: a424b3f880acbb84eb92391999bb90fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6616505359949294419
-    second: Squared Speech Bubble - 29_0
+      213: 4293821821613753569
+    second: Sample - Level 1 Calendar Complete_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Squared Speech Bubble - 29_0
+      name: Sample - Level 1 Calendar Complete_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 386
-        height: 154
+        width: 1478
+        height: 1528
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da411cd4e637d24a0800000000000000
-      internalID: -6616505359949294419
+      spriteID: 1e4cb167238b69b30800000000000000
+      internalID: 4293821821613753569
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Squared Speech Bubble - 29_0: -6616505359949294419
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
