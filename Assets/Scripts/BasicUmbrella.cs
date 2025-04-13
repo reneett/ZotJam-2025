@@ -19,6 +19,8 @@ public class Umbrella : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite openUmbrella;
     public Sprite closedUmbrella;
+    private bool startingState = true;
+    private Vector2 startingPosition;
     private bool umbrellaOpen = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,6 +32,8 @@ public class Umbrella : MonoBehaviour
             changeUmbrella(false);
             umbrellaOpen = false;
         }
+        startingState = umbrellaOpen;
+        startingPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -49,15 +53,24 @@ public class Umbrella : MonoBehaviour
         if (open) {
             umbrellaBody.simulated = true;
             spriteRenderer.enabled = true;
+            Debug.Log("moving umbrella");
+            umbrellaBody.MovePosition(startingPosition);
             spriteRenderer.sprite = openUmbrella;
         } else {
-            umbrellaBody.simulated = false;
-            if (closedUmbrella == null) {
-                spriteRenderer.enabled = false;
-            } else {
+            if (closedUmbrella != null) {
                 spriteRenderer.sprite = closedUmbrella;
+                umbrellaBody.simulated = false;
+            } else {
+                Vector2 position = startingPosition;
+                position.y -= 20;
+                umbrellaBody.MovePosition(position);
             }
         }
+    }
+
+    public void resetUmbrella() {
+        Debug.Log("resetting umbreller");
+        changeUmbrella(startingState);
     }
 
 

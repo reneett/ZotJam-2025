@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,11 +19,14 @@ public class PlayerMovement : MonoBehaviour
     public float jumpModifier = 1;
     private bool facingRight = true;
     public bool levelClear = false;
+    public bool died = false;
+    private List<Umbrella> umbrellas;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        umbrellas = new List<Umbrella>();
         //spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         startPosition = transform.position;
@@ -33,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (!levelClear) {
+            died = false;
             //only move if the level has not been cleared
             Vector2 velocity = body.linearVelocity;
             gravityBase = 1;
@@ -65,8 +70,12 @@ public class PlayerMovement : MonoBehaviour
             onUmbrella = true;
             jumpModifier = collision.gameObject.GetComponent<Umbrella>().modifier;
             collision.gameObject.GetComponent<Umbrella>().jumpedOn = true;
+            if (collision.gameObject.GetComponent<Umbrella>().isDisappearing) {
+                umbrellas.Add(collision.gameObject.GetComponent<Umbrella>());
+            }
         }
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Crow") {
+            resetLevel();
             respawn();
         }
         if (collision.gameObject.tag == "Goal") {
@@ -76,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void respawn() {
+        died = true;
         onUmbrella = false;
         body.linearVelocity = Vector2.zero;
         body.angularVelocity = 0;
@@ -88,7 +98,16 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void resetLevel() {
+        Debug.Log(umbrellas.Count);
         levelClear = false;
+        foreach (Umbrella u in umbrellas) {
+            u.resetUmbrella();
+        }
+        umbrellas.Clear();
+    }
+
+    public bool isDead() {
+        return died;
     }
 
 }
