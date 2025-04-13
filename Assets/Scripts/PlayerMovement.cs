@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float gravityScale;
 
     private Rigidbody2D body;
+    private SpriteRenderer spriteRenderer;
     public bool onUmbrella;
     private Vector2 startPosition;
     public float jumpModifier = 1;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         startPosition = transform.position;
         onUmbrella = false;
     }
@@ -28,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 velocity = body.linearVelocity;
         gravityBase = 1;
 
-        /* bool isMovingLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
+        /*bool isMovingLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
         bool isMovingRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
         
         if (isMovingLeft)
@@ -39,6 +41,12 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.x = Mathf.MoveTowards(body.linearVelocity.x, speed, accelerationRate * Time.deltaTime);
         } */
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
+            spriteRenderer.flipX = true;
+        } else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
+            spriteRenderer.flipX = false;
+        }
+
         velocity.x = Input.GetAxis("Horizontal")*speed*accelerationRate;
         if(velocity.y < 0) {
             gravityBase = gravityBase * gravityScale;
