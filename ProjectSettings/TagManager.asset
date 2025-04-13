@@ -43,5 +43,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 2533783531
+    locked: 0
+  - name: City
+    uniqueID: 3034963009
+    locked: 0
+  - name: Road
+    uniqueID: 254505999
+    locked: 0
+  - name: Player
+    uniqueID: 1033754339
+    locked: 0
+  - name: Foreground
+    uniqueID: 1456456377
+    locked: 0
+  - name: Cloud
+    uniqueID: 121778459
+    locked: 0
   m_RenderingLayers:
   - Default
