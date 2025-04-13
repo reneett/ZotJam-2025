@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 712e60eb346a77d478ad6924f1aaddbf
+guid: 9624689a0fde97f40bfa5ede700aaf8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4283504983499780131
-    second: v2_standard umbrella_0
+      213: 4936535993870934621
+    second: standard umbrella fr_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,10 +116,10 @@ TextureImporter:
       name: base_umbrella
       rect:
         serializedVersion: 2
-        x: 66
-        y: 188
-        width: 203
-        height: 61
+        x: 193
+        y: 544
+        width: 583
+        height: 170
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddf41e899eeed84c0800000000000000
-      internalID: -4283504983499780131
+      spriteID: d526b9fd459128440800000000000000
+      internalID: 4936535993870934621
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 583ad419289a4a94d9b8bf461bf7a5b4
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      base_umbrella: -4283504983499780131
+      base_umbrella: 4936535993870934621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
