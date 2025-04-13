@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5319e5495ec211240947929a182c2141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4
+  movementSpeed: 5
   isFlippable: 1
   movingThing: {fileID: 1838710969491789489}
   startPosition: {fileID: 3713769497564706321}
