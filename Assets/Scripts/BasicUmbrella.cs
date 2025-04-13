@@ -6,13 +6,12 @@ public class Umbrella : MonoBehaviour
     >>only need different modifiers
     bouncy umbrella : double jump height
     old umbrella : half jump height
-    horizontal: bounce at an angle
 
     >>need access to bool to determine availability
     collapsing : collapses/reopens on each jump
 
     >>on collision, destroy
-    disappearing : bounce once, then destroyed
+    disappearing : bounce once, then disabled
 
     >>transform
     moving : umbrella moves side to side

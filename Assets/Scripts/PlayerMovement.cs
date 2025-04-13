@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 velocity = body.linearVelocity;
         gravityBase = 1;
 
-        bool isMovingLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
+        /* bool isMovingLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
         bool isMovingRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
         
         if (isMovingLeft)
@@ -38,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
         if (isMovingRight)
         {
             velocity.x = Mathf.MoveTowards(body.linearVelocity.x, speed, accelerationRate * Time.deltaTime);
-        }
+        } */
+        velocity.x = Input.GetAxis("Horizontal")*speed*accelerationRate;
         if(velocity.y < 0) {
             gravityBase = gravityBase * gravityScale;
             body.gravityScale = gravityBase;
