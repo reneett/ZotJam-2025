@@ -43,6 +43,7 @@ public class Umbrella : MonoBehaviour
             changeUmbrella(false);
         }
         if (isCollapsible && player.onUmbrella) {
+            Debug.Log("collapsing/uncollapsing");
             umbrellaOpen = !umbrellaOpen;
             changeUmbrella(umbrellaOpen);
         }
@@ -56,7 +57,7 @@ public class Umbrella : MonoBehaviour
             Debug.Log("moving umbrella");
             umbrellaBody.MovePosition(startingPosition);
             spriteRenderer.sprite = openUmbrella;
-            jumpedOn = false;
+            jumpedOn = true;
         }
         else
         {
@@ -83,6 +84,7 @@ public class Umbrella : MonoBehaviour
     public void resetUmbrella() {
         Debug.Log("resetting umbreller");
         changeUmbrella(startingState);
+        jumpedOn = false;
     }
 
 
