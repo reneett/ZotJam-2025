@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: d38a9fbeb90421d4bbbf81e98203984e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3526588059652701640
+    second: ASBMF Logo_0
+  - first:
+      213: 7948752868710144360
+    second: ASBMF Logo_1
+  - first:
+      213: 3187828275285859333
+    second: ASBMF Logo_2
+  - first:
+      213: 149695755597428350
+    second: ASBMF Logo_3
+  - first:
+      213: -5383990615261626838
+    second: ASBMF Logo_4
+  - first:
+      213: -6553326868746022893
+    second: ASBMF Logo_5
+  - first:
+      213: -4965612808605877043
+    second: ASBMF Logo_6
+  - first:
+      213: -6298802531363915489
+    second: ASBMF Logo_7
+  - first:
+      213: -7831895692015798836
+    second: ASBMF Logo_8
+  - first:
+      213: 3673401288301807441
+    second: ASBMF Logo_9
+  - first:
+      213: 8101264834372291872
+    second: ASBMF Logo_10
+  - first:
+      213: 2031868885453257898
+    second: ASBMF Logo_11
+  - first:
+      213: -7281991159617730203
+    second: ASBMF Logo_12
+  - first:
+      213: -6109268587193178870
+    second: ASBMF Logo_13
+  - first:
+      213: 934714476221294594
+    second: ASBMF Logo_14
+  - first:
+      213: 6819382102788105710
+    second: ASBMF Logo_15
+  - first:
+      213: 8665417339707280851
+    second: ASBMF Logo_16
+  - first:
+      213: -4398018576392803866
+    second: ASBMF Logo_17
+  - first:
+      213: 3219516659603721811
+    second: ASBMF Logo_18
+  - first:
+      213: 4289631872490883410
+    second: ASBMF Logo_19
+  - first:
+      213: -5319677120366704093
+    second: ASBMF Logo_20
+  - first:
+      213: 3666435866296028363
+    second: ASBMF Logo_21
+  - first:
+      213: 2693325467978372459
+    second: ASBMF Logo_22
+  - first:
+      213: 7138144167670274223
+    second: ASBMF Logo_23
+  - first:
+      213: -874899960782280352
+    second: ASBMF Logo_24
+  - first:
+      213: -2313200532452500935
+    second: ASBMF Logo_25
+  - first:
+      213: 2500787779511024941
+    second: ASBMF Logo_26
+  - first:
+      213: -3687704117946937835
+    second: ASBMF Logo_27
+  - first:
+      213: -5325741968671619443
+    second: ASBMF Logo_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ASBMF Logo_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 856
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832444b28da0f0fc0800000000000000
+      internalID: -3526588059652701640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 111
+        width: 62
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869d5daae94af4e60800000000000000
+      internalID: 7948752868710144360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 117
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c1c513de07d3c20800000000000000
+      internalID: 3187828275285859333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 162
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76b4c02f73d31200800000000000000
+      internalID: 149695755597428350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_4
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 122
+        width: 15
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e3b4f9f093845b0800000000000000
+      internalID: -5383990615261626838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_5
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 111
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310de531fe7ed05a0800000000000000
+      internalID: -6553326868746022893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 116
+        width: 44
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccbae2a579961bb0800000000000000
+      internalID: -4965612808605877043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_7
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 117
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19f8bf58782698a0800000000000000
+      internalID: -6298802531363915489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_8
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 116
+        width: 70
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc57c7ffc548f4390800000000000000
+      internalID: -7831895692015798836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_9
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 117
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15701ba520b8af230800000000000000
+      internalID: 3673401288301807441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_10
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 117
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02dcf1cc1797d6070800000000000000
+      internalID: 8101264834372291872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_11
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 111
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac3c9b6cf5a23c10800000000000000
+      internalID: 2031868885453257898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_12
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 85
+        width: 50
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56943793f9b21fa90800000000000000
+      internalID: -7281991159617730203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_13
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 114
+        width: 15
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05e5e69694873ba0800000000000000
+      internalID: -6109268587193178870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_14
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 43
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208e5912dd5c8fc00800000000000000
+      internalID: 934714476221294594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_15
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 46
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5675054ef43ae50800000000000000
+      internalID: 6819382102788105710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_16
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 44
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd43cbb82fb14870800000000000000
+      internalID: 8665417339707280851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_17
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 44
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9a98e086917f2c0800000000000000
+      internalID: -4398018576392803866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_18
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ec12c18550eac20800000000000000
+      internalID: 3219516659603721811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_19
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 42
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2594309e575d78b30800000000000000
+      internalID: 4289631872490883410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_20
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 46
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a05c808d5bc26b0800000000000000
+      internalID: -5319677120366704093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_21
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 29
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc835aaefbc1e230800000000000000
+      internalID: 3666435866296028363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_22
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 43
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b651d574e3d906520800000000000000
+      internalID: 2693325467978372459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_23
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 48
+        width: 7
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8538d0d48cf0360800000000000000
+      internalID: 7138144167670274223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_24
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 43
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069a19ffe1bbbd3f0800000000000000
+      internalID: -874899960782280352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_25
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 46
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a9ce02f5cd5efd0800000000000000
+      internalID: -2313200532452500935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_26
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 46
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d74685c3594b220800000000000000
+      internalID: 2500787779511024941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_27
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 43
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e070d94a4a2dcc0800000000000000
+      internalID: -3687704117946937835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASBMF Logo_28
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 0
+        width: 222
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8640ff75e92716b0800000000000000
+      internalID: -5325741968671619443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e75bbfe57c71d104aafa4956f8de0a4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ASBMF Logo_0: -3526588059652701640
+      ASBMF Logo_1: 7948752868710144360
+      ASBMF Logo_10: 8101264834372291872
+      ASBMF Logo_11: 2031868885453257898
+      ASBMF Logo_12: -7281991159617730203
+      ASBMF Logo_13: -6109268587193178870
+      ASBMF Logo_14: 934714476221294594
+      ASBMF Logo_15: 6819382102788105710
+      ASBMF Logo_16: 8665417339707280851
+      ASBMF Logo_17: -4398018576392803866
+      ASBMF Logo_18: 3219516659603721811
+      ASBMF Logo_19: 4289631872490883410
+      ASBMF Logo_2: 3187828275285859333
+      ASBMF Logo_20: -5319677120366704093
+      ASBMF Logo_21: 3666435866296028363
+      ASBMF Logo_22: 2693325467978372459
+      ASBMF Logo_23: 7138144167670274223
+      ASBMF Logo_24: -874899960782280352
+      ASBMF Logo_25: -2313200532452500935
+      ASBMF Logo_26: 2500787779511024941
+      ASBMF Logo_27: -3687704117946937835
+      ASBMF Logo_28: -5325741968671619443
+      ASBMF Logo_3: 149695755597428350
+      ASBMF Logo_4: -5383990615261626838
+      ASBMF Logo_5: -6553326868746022893
+      ASBMF Logo_6: -4965612808605877043
+      ASBMF Logo_7: -6298802531363915489
+      ASBMF Logo_8: -7831895692015798836
+      ASBMF Logo_9: 3673401288301807441
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
