@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Quit - Button - Hover or Select_0: -9175804194383565540
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
