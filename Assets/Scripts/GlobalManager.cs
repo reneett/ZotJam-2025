@@ -38,7 +38,7 @@ public class GlobalManager : MonoBehaviour
             player.resetLevel();
         } else if (player.levelClear && currentLevel == levels.Length-1) {
             // no more levels
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("Ending Scene");
         }
     }
 
