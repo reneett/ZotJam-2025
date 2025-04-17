@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Umbrella") {
+            Debug.Log("player hit umbrella");
             onUmbrella = true;
             jumpModifier = collision.gameObject.GetComponent<Umbrella>().modifier;
             collision.gameObject.GetComponent<Umbrella>().jumpedOn = true;
@@ -98,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void resetLevel() {
-        Debug.Log(umbrellas.Count);
         levelClear = false;
         foreach (Umbrella u in umbrellas) {
             u.resetUmbrella();

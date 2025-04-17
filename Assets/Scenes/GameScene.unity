@@ -321,13 +321,17 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1959703646}
+    - target: {fileID: 2544358149487580343, guid: c24adbd0d90ea5c42ab0303e723888bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
     - target: {fileID: 2862885505177867487, guid: c24adbd0d90ea5c42ab0303e723888bc, type: 3}
       propertyPath: m_Name
       value: Level 8
       objectReference: {fileID: 0}
     - target: {fileID: 2862885505177867487, guid: c24adbd0d90ea5c42ab0303e723888bc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4764440256309471719, guid: c24adbd0d90ea5c42ab0303e723888bc, type: 3}
       propertyPath: player
@@ -346,6 +350,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1959703646}
     - target: {fileID: 7326770908208798533, guid: c24adbd0d90ea5c42ab0303e723888bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
+    - target: {fileID: 8039311723943598692, guid: c24adbd0d90ea5c42ab0303e723888bc, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1959703646}
@@ -887,6 +895,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6065498394538212895, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3830,6 +3842,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6065498394538212895, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4469,6 +4485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6065498394538212895, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4729,6 +4749,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6831266958658445412, guid: bfcda7ee0dc45344b8bcef8c1662174f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
+    - target: {fileID: 8169362581013656446, guid: bfcda7ee0dc45344b8bcef8c1662174f, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1959703646}
@@ -5834,6 +5858,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6065498394538212895, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5896,6 +5924,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6065498394538212895, guid: 50364c153aa9f8c46896e7b18d1f3ec4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1959703646}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7779,7 +7811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7654330439700871783, guid: 720c856924efd7643884cee0a6001f14, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7693310751607893612, guid: 720c856924efd7643884cee0a6001f14, type: 3}
       propertyPath: m_LocalPosition.x

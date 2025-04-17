@@ -39,6 +39,7 @@ public class Umbrella : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(player.onUmbrella);
         if (isDisappearing && jumpedOn) {
             changeUmbrella(false);
         }
@@ -52,9 +53,9 @@ public class Umbrella : MonoBehaviour
     {
         if (open)
         {
+            Debug.Log("opening");
             umbrellaBody.simulated = true;
             spriteRenderer.enabled = true;
-            Debug.Log("moving umbrella");
             umbrellaBody.MovePosition(startingPosition);
             spriteRenderer.sprite = openUmbrella;
             jumpedOn = true;
@@ -63,6 +64,7 @@ public class Umbrella : MonoBehaviour
         {
             if (closedUmbrella != null)
             {
+                Debug.Log("closing");
                 spriteRenderer.sprite = closedUmbrella;
                 umbrellaBody.simulated = false;
             }
@@ -71,10 +73,6 @@ public class Umbrella : MonoBehaviour
                 Vector2 position = startingPosition;
                 position.y -= 20;
                 umbrellaBody.MovePosition(position);
-            }
-
-            if (isDisappearing)
-            {
                 spriteRenderer.enabled = false;
             }
         }
