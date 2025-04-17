@@ -26,18 +26,19 @@ public class GlobalManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.levelClear && currentLevel <= levels.Length-1) {
+
+        if (player.levelClear && currentLevel < levels.Length-1) {
             // reset player and scene and go to next level
             Time.timeScale = 0; //pause
-            player.respawn();
-            player.resetLevel();
             levels[currentLevel].SetActive(false);
             currentLevel++;
             levels[currentLevel].SetActive(true);
             Time.timeScale = 1;
+            player.respawn();
+            player.resetLevel();
         } else if (player.levelClear && currentLevel == levels.Length-1) {
             // no more levels
-            SceneManager.LoadScene("Ending Scene");
+            SceneManager.LoadScene(2);
         }
     }
 
