@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class GlobalManager : MonoBehaviour
 {
 
-    [SerializeField] private PlayerMovement player;
+    [SerializeField] private GameObject player;
+    [SerializeField] private PlayerMovement playerScript;
     [SerializeField] public GameObject[] levels;
 
     // public Canvas inGameCanvas;
@@ -27,16 +28,18 @@ public class GlobalManager : MonoBehaviour
     void Update()
     {
 
-        if (player.levelClear && currentLevel < levels.Length-1) {
+        if (playerScript.levelClear && currentLevel < levels.Length-1) {
             // reset player and scene and go to next level
             Time.timeScale = 0; //pause
+            player.SetActive(false);
             levels[currentLevel].SetActive(false);
             currentLevel++;
             levels[currentLevel].SetActive(true);
+            player.SetActive(true);
             Time.timeScale = 1;
-            player.respawn();
-            player.resetLevel();
-        } else if (player.levelClear && currentLevel == levels.Length-1) {
+            playerScript.respawn();
+            playerScript.resetLevel();
+        } else if (playerScript.levelClear && currentLevel == levels.Length-1) {
             // no more levels
             SceneManager.LoadScene("Ending Scene");
         }

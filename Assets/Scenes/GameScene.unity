@@ -5009,7 +5009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94eff58fa9508c842b82855a8f71e3b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1959703646}
+  player: {fileID: 1959703641}
+  playerScript: {fileID: 1959703646}
   levels:
   - {fileID: 941764713}
   - {fileID: 875996862}
