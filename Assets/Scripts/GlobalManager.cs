@@ -17,6 +17,8 @@ public class GlobalManager : MonoBehaviour
     // public Canvas endScreen;
 
     private int currentLevel = 0;
+    public float celebrationTime = 0.75f;
+    private bool waiting = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,21 +30,30 @@ public class GlobalManager : MonoBehaviour
     void Update()
     {
 
-        if (playerScript.levelClear && currentLevel < levels.Length-1) {
+        if (playerScript.levelClear && currentLevel < levels.Length-1 && !waiting) {
             // reset player and scene and go to next level
-            Time.timeScale = 0; //pause
-            player.SetActive(false);
-            levels[currentLevel].SetActive(false);
-            currentLevel++;
-            levels[currentLevel].SetActive(true);
-            player.SetActive(true);
-            Time.timeScale = 1;
-            playerScript.respawn();
-            playerScript.resetLevel();
+            waiting = true;
+            StartCoroutine(respawnAfterCelebrate(celebrationTime));
         } else if (playerScript.levelClear && currentLevel == levels.Length-1) {
             // no more levels
             SceneManager.LoadScene("Ending Scene");
         }
+    }
+
+    IEnumerator respawnAfterCelebrate(float pauseTime) {
+        playerScript.simulateBody(false);
+        yield return new WaitForSeconds(pauseTime);
+        Time.timeScale = 0; //pause
+        player.SetActive(false);
+        levels[currentLevel].SetActive(false);
+        currentLevel++;
+        levels[currentLevel].SetActive(true);
+        player.SetActive(true);
+        playerScript.simulateBody(true);
+        Time.timeScale = 1;
+        playerScript.respawn();
+        playerScript.resetLevel();
+        waiting = false;
     }
 
 }

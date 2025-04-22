@@ -5021,6 +5021,7 @@ MonoBehaviour:
   - {fileID: 10163328}
   - {fileID: 10672247}
   - {fileID: 1202731765}
+  celebrationTime: 2
 --- !u!4 &1242035141
 Transform:
   m_ObjectHideFlags: 0

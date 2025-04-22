@@ -110,4 +110,8 @@ public class PlayerMovement : MonoBehaviour
         return died;
     }
 
+    public void simulateBody(bool simulated) {
+        body.simulated = simulated;
+    }
+
 }
