@@ -34,7 +34,7 @@ public class GlobalManager : MonoBehaviour
             // reset player and scene and go to next level
             waiting = true;
             StartCoroutine(respawnAfterCelebrate(celebrationTime));
-        } else if (playerScript.levelClear && currentLevel == levels.Length-1) {
+        } else if (playerScript.levelClear && currentLevel >= levels.Length-1) {
             // no more levels
             SceneManager.LoadScene("Ending Scene");
         }
